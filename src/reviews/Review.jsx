@@ -3,17 +3,18 @@ import './Review.css';
 
 const Review = () => (
   <div className="review-section">
-    <div className="row around">
-      <div className="col-xs-12 title">
-        <div className="box">
-          <h1>Game reviews blocks with Flexbox</h1>
-        </div>
+    <div className="Title">
+      <div className="box">
+        <h1>What people are saying about us</h1>
       </div>
+    </div>
+    <div className="row-around">
       {/* BLUE CARD  */}
-      <div className="col-sm-3 col-xs-6">
+
+      <div className="review">
         <div className="box blue">
           <div className="card-wrapper">
-            <div className="card-overlay" />
+            {/* <div className="card-overlay" /> */}
             <div className="card-header">
               <span className="left">
                 <i className="fa fa-check" />
@@ -48,7 +49,7 @@ const Review = () => (
         </div>
       </div>
       {/* GREEN CARD */}
-      <div className="col-sm-3 col-xs-6">
+      <div className="review">
         <div className="box green">
           <div className="card-wrapper">
             <div className="card-overlay" />
@@ -86,7 +87,7 @@ const Review = () => (
         </div>
       </div>
       {/* YELLOW CARD  */}
-      <div className="col-sm-3 col-xs-6">
+      <div className="review">
         <div className="box yellow">
           <div className="card-wrapper">
             <div className="card-overlay" />
@@ -121,7 +122,7 @@ const Review = () => (
         </div>
       </div>
       {/* RED CARD */}
-      <div className="col-sm-3 col-xs-6">
+      <div className="review">
         <div className="box red">
           <div className="card-wrapper">
             <div className="card-overlay" />
