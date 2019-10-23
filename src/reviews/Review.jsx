@@ -3,7 +3,7 @@ import './Review.css';
 
 const Review = () => (
   <div className="review-section">
-    <div className="Title">
+    <div className="title">
       <div className="box">
         <h1>What people are saying about us</h1>
       </div>
@@ -14,7 +14,7 @@ const Review = () => (
       <div className="review">
         <div className="box blue">
           <div className="card-wrapper">
-            {/* <div className="card-overlay" /> */}
+            <div className="card-overlay" />
             <div className="card-header">
               <span className="left">
                 <i className="fa fa-check" />
