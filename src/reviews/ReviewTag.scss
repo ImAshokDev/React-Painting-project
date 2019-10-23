@@ -1,0 +1,19 @@
+.reviewtag-section {
+  height: 500px;
+  width: 1200px;
+  background: brown;
+  margin: auto;
+  .review-block {
+    height: 400px;
+    width: 1000px;
+    margin: auto;
+    background: burlywood;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    .cards {
+      background: chocolate;
+    }
+  }
+}

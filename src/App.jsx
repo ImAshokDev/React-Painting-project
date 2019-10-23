@@ -5,6 +5,7 @@ import Menu from './menu/Menu';
 import Slider from './slider/Slider';
 import About from './about/About';
 import Review from './reviews/Review';
+import ReviewTag from './reviews/ReviewTag';
 import Video from './video/Video';
 import img1 from './video/video-bg.jpg';
 import Price from './prices/Price';
@@ -21,6 +22,7 @@ const App = () => (
     <Slider />
     <About />
     <Review />
+    <ReviewTag />
     <Video image={img1} />
     <Price />
     <Picks />
