@@ -4,6 +4,7 @@ import Header from './header/Header';
 import Menu from './menu/Menu';
 import Slider from './slider/Slider';
 import About from './about/About';
+import Review from './reviews/Review';
 import Video from './video/Video';
 import img1 from './video/video-bg.jpg';
 import Price from './prices/Price';
@@ -19,6 +20,7 @@ const App = () => (
     <Menu list={['about me', 'services', 'gallery', 'contacts', 'pages']} />
     <Slider />
     <About />
+    <Review />
     <Video image={img1} />
     <Price />
     <Picks />
