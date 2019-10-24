@@ -4,6 +4,7 @@ import Button from '../Button';
 import img1 from './images/bg.png';
 import img2 from './images/01.jpg';
 
+
 const About = () => (
   <div className="about-section">
     <AboutBlock />
