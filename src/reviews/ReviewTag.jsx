@@ -17,34 +17,63 @@ const ReviewTag = () => (
         image={img1}
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
         like="43"
+        icon1={<i className="fa fa-star" />}
+        icon2={<i className="fa fa-star" />}
+        icon3={<i className="fa fa-star" />}
+        icon4={<i className="fa fa-star" />}
+        icon5={<i className="fas fa-star-half" />}
       />
       <Cards
         name="ashok"
-        rate="4.6"
+        rate="5"
         image={img2}
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
         like="43"
+        icon1={<i className="fa fa-star" />}
+        icon2={<i className="fa fa-star" />}
+        icon3={<i className="fa fa-star" />}
+        icon4={<i className="fa fa-star" />}
+        icon5={<i className="fa fa-star" />}
       />
       <Cards
         name="ashok"
-        rate="4.6"
+        rate="4.7"
         image={img3}
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
         like="43"
+        icon1={<i className="fa fa-star" />}
+        icon2={<i className="fa fa-star" />}
+        icon3={<i className="fa fa-star" />}
+        icon4={<i className="fa fa-star" />}
+        icon5={<i className="fas fa-star-half" />}
       />
       <Cards
         name="ashok"
-        rate="4.6"
+        rate="5"
         image={img4}
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
         like="43"
+        icon1={<i className="fa fa-star" />}
+        icon2={<i className="fa fa-star" />}
+        icon3={<i className="fa fa-star" />}
+        icon4={<i className="fa fa-star" />}
+        icon5={<i className="fa fa-star" />}
       />
     </div>
   </div>
 );
 
 const Cards = ({
- name, rate, image, text, like 
+  name,
+  rate,
+  image,
+  text,
+  like,
+  icon1,
+  icon2,
+  icon3,
+  icon4,
+  icon5,
 }) => (
   <div className="cards">
     <p>
@@ -52,20 +81,24 @@ const Cards = ({
         <i className="fa fa-check" />
         {name}
       </span>
-      <span className="right">
-        <i className="fa fa-star" />
-        {rate}
-      </span>
     </p>
     <div className="profile">
       <img src={image} alt="" />
     </div>
     <h4>{text}</h4>
+    <span className="right">
+      {icon1}
+      {icon2}
+      {icon3}
+      {icon4}
+      {icon5}
+      {rate}
+    </span>
 
-    <span className="left">
+    {/* <span className="left">
       <i className="fa fa-heart" />
       {like}
-    </span>
+    </span> */}
   </div>
 );
 
