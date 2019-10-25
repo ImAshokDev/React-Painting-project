@@ -73,27 +73,30 @@ const Cards = ({
   icon2,
   icon3,
   icon4,
-  icon5,
+  icon5
 }) => (
   <div className="cards">
-    <p>
-      <span className="left">
-        <i className="fa fa-check" />
-        {name}
+    <div className="card-wrapper">
+      <div className="profile">
+        <img src={image} alt="" />
+      </div>
+      <div className="name">
+        <span>
+          <i className="fa fa-check" />
+          {name}
+        </span>
+      </div>
+
+      <h4>{text}</h4>
+      <span className="right">
+        {icon1}
+        {icon2}
+        {icon3}
+        {icon4}
+        {icon5}
+        {rate}
       </span>
-    </p>
-    <div className="profile">
-      <img src={image} alt="" />
     </div>
-    <h4>{text}</h4>
-    <span className="right">
-      {icon1}
-      {icon2}
-      {icon3}
-      {icon4}
-      {icon5}
-      {rate}
-    </span>
 
     {/* <span className="left">
       <i className="fa fa-heart" />
