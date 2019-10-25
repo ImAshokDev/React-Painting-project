@@ -1,53 +1,50 @@
 .review-section {
-  width: 1200px;
-  height: 500px;
-  background: #8e00ed;
+  width: 1100px;
+  height: 480px;
+
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   .title {
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Almarai', sans-serif;
     .box {
       h1 {
         font-size: 30px;
-        padding-top: 10px;
+        padding: 10px 0;
+        font-family: 'roboto';
       }
     }
   }
   .row-around {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    div[class^='col-'] {
-      margin: 0;
-      padding: 0 1px;
-      overflow: hidden;
-    }
+    grid-gap: 30px;
+
     .review {
       width: 250px;
       height: 342px;
       color: #919191;
-      margin: 20px 0 0 0;
-      user-select: none;
+
       text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
 
       .box-blue {
-        width: 251px;
+        width: 100%;
         height: 343px;
         background: #0110df9b;
       }
       .box-green {
-        width: 250px;
+        width: 100%;
         height: 343px;
         background: rgba(0, 153, 37, 0.7);
       }
       .box-yellow {
-        width: 250px;
+        width: 100%;
         height: 343px;
         background: rgba(255, 229, 0, 0.7);
       }
       .box-red {
-        width: 250px;
+        width: 100%;
         height: 343px;
         background: rgba(234, 0, 3, 0.7);
       }
@@ -61,6 +58,7 @@
         margin-bottom: 15px;
         i {
           margin-right: 5px;
+          transition: all ease-out 0.25s;
         }
         .left {
           font-size: 14px;
