@@ -13,10 +13,10 @@ const ReviewTag = () => (
     <div className="review-block">
       <Cards
         name="ashok"
-        rate="4.6"
+        rate=" 4.6"
         image={img1}
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
-        like="43"
+        like=" 43"
         icon1={<i className="fa fa-star" />}
         icon2={<i className="fa fa-star" />}
         icon3={<i className="fa fa-star" />}
@@ -25,7 +25,7 @@ const ReviewTag = () => (
       />
       <Cards
         name="ashok"
-        rate="5"
+        rate="    5"
         image={img2}
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
         like="43"
@@ -37,7 +37,7 @@ const ReviewTag = () => (
       />
       <Cards
         name="ashok"
-        rate="4.7"
+        rate=" 4.7"
         image={img3}
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
         like="43"
@@ -49,7 +49,7 @@ const ReviewTag = () => (
       />
       <Cards
         name="ashok"
-        rate="5"
+        rate="   5"
         image={img4}
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
         like="43"
@@ -88,14 +88,18 @@ const Cards = ({
       </div>
 
       <h4>{text}</h4>
-      <span className="right">
-        {icon1}
-        {icon2}
-        {icon3}
-        {icon4}
-        {icon5}
-        {rate}
-      </span>
+
+      <ul>
+        <li>{icon1}</li>
+        <li>{icon2}</li>
+        <li>{icon3}</li>
+        <li>{icon4}</li>
+        <li>{icon5}</li>
+
+        <div>
+          <span>{rate}</span>
+        </div>
+      </ul>
     </div>
 
     {/* <span className="left">
