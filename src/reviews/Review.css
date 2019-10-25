@@ -14,8 +14,8 @@
   background: #8e00ed;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
-}
-.title {
+} */
+/* .title {
   text-align: center;
   color: white;
   font-family: 'Almarai', sans-serif;
@@ -23,14 +23,14 @@
 .title .box h1 {
   font-size: 30px;
   padding-top: 10px;
-}
-.row-around {
+} */
+/* .row-around {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.review {
+} */
+/* .review {
   width: 250px;
- 
+
   margin: 20px 0 0 0;
   cursor: pointer;
   -webkit-user-select: none;
@@ -38,18 +38,18 @@
   -ms-user-select: none;
   user-select: none;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-}
+} */
 
-.card-wrapper {
+/* .card-wrapper {
   overflow: hidden;
   background: url(https://dl.dropboxusercontent.com/s/ou2wvj3smr8k8eu/bg.jpg);
   background-size: cover;
   min-height: 350px;
   position: relative;
   margin-bottom: 15px;
-}
+} */
 
-.card-mid {
+/* .card-mid {
   height: 60px;
   width: 60px;
   position: absolute;
@@ -63,16 +63,16 @@
   box-sizing: border-box;
   -webkit-transition: all ease-out 0.25s;
   transition: all ease-out 0.25s;
-}
+} */
 
-.card-wrapper:hover .card-mid {
+/* .card-wrapper:hover .card-mid {
   border: 3px solid rgba(0, 0, 0, 0.5);
   top: 47%;
-}
+} */
 
-.card-mid img {
+/* .card-mid img {
   max-width: 100%;
-}
+} */
 
 div[class^='col-'] {
   margin: 0;
@@ -80,19 +80,22 @@ div[class^='col-'] {
   overflow: hidden;
 }
 
-.card-footer {
+/* .card-footer {
   position: absolute;
-  bottom: 0;
+  margin: 120px 0 0 0;
   color: #fff;
   padding: 0 10px;
+  text-align: center;
 }
 
 .card-footer h4 {
+  height: 90px;
+
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 20px;
-}
+} */
 
 .left {
   float: left;
@@ -136,7 +139,7 @@ div[class^='col-'] {
 }
 
 /* BLUE */
-/* 
+
 .blue:hover .card-overlay {
   background: #0110df9b;
 }
@@ -144,33 +147,66 @@ div[class^='col-'] {
 .blue .card-wrapper {
   border-bottom: 3px solid #000fe0;
 }
-
-/* RED */
-
-/* .red:hover .card-overlay {
-  background: rgba(234, 0, 3, 0.7);
+.blue .card-wrapper ul li {
+  list-style-type: none;
+  float: left;
+  margin: 0 2px;
+  font-size: 18px;
+  color: orange;
 }
-
-.red .card-wrapper {
-  border-bottom: 3px solid #ea0000;
-} */
-
-/* YELLOW */
-
-/* .yellow:hover .card-overlay {
-  background: rgba(255, 229, 0, 0.7);
-}
-
-.yellow .card-wrapper {
-  border-bottom: 3px solid #ffe500;
-} */
-
 /* GREEN */
 
-/* .green:hover .card-overlay {
+.green:hover .card-overlay {
   background: rgba(0, 153, 37, 0.7);
 }
 
 .green .card-wrapper {
   border-bottom: 3px solid #009925;
-}  */
+}
+.green .card-wrapper ul li {
+  list-style-type: none;
+  float: left;
+  margin: 0 2px;
+  font-size: 18px;
+  color: orange;
+}
+.green .card-wrapper ul li span {
+  color: white;
+}
+
+/* YELLOW */
+
+.yellow:hover .card-overlay {
+  background: rgba(255, 229, 0, 0.7);
+}
+
+.yellow .card-wrapper {
+  border-bottom: 3px solid #ffe500;
+}
+.yellow .card-wrapper ul li {
+  list-style-type: none;
+  float: left;
+  margin: 0 2px;
+  font-size: 18px;
+  color: orange;
+}
+.yellow .card-wrapper ul li span {
+  color: white;
+}
+
+/* RED */
+
+.red:hover .card-overlay {
+  background: rgba(234, 0, 3, 0.7);
+}
+
+.red .card-wrapper {
+  border-bottom: 3px solid #ea0000;
+}
+.red .card-wrapper ul li {
+  list-style-type: none;
+  float: left;
+  margin: 0 2px;
+  font-size: 18px;
+  color: orange;
+}

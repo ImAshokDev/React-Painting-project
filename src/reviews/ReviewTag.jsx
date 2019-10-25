@@ -11,101 +11,172 @@ const ReviewTag = () => (
       <h1>What people are saying about us</h1>
     </div>
     <div className="review-block">
-      <Cards
-        name="ashok"
-        rate=" 4.6"
-        image={img1}
-        text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
-        like=" 43"
-        icon1={<i className="fa fa-star" />}
-        icon2={<i className="fa fa-star" />}
-        icon3={<i className="fa fa-star" />}
-        icon4={<i className="fa fa-star" />}
-        icon5={<i className="fas fa-star-half" />}
-      />
-      <Cards
-        name="ashok"
-        rate="    5"
-        image={img2}
-        text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
-        like="43"
-        icon1={<i className="fa fa-star" />}
-        icon2={<i className="fa fa-star" />}
-        icon3={<i className="fa fa-star" />}
-        icon4={<i className="fa fa-star" />}
-        icon5={<i className="fa fa-star" />}
-      />
-      <Cards
-        name="ashok"
-        rate=" 4.7"
-        image={img3}
-        text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
-        like="43"
-        icon1={<i className="fa fa-star" />}
-        icon2={<i className="fa fa-star" />}
-        icon3={<i className="fa fa-star" />}
-        icon4={<i className="fa fa-star" />}
-        icon5={<i className="fas fa-star-half" />}
-      />
-      <Cards
-        name="ashok"
-        rate="   5"
-        image={img4}
-        text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
-        like="43"
-        icon1={<i className="fa fa-star" />}
-        icon2={<i className="fa fa-star" />}
-        icon3={<i className="fa fa-star" />}
-        icon4={<i className="fa fa-star" />}
-        icon5={<i className="fa fa-star" />}
-      />
+      <Card1 />
+      <Card2 />
+      <Card3 />
+      <Card4 />
     </div>
   </div>
 );
 
-const Cards = ({
-  name,
-  rate,
-  image,
-  text,
-  like,
-  icon1,
-  icon2,
-  icon3,
-  icon4,
-  icon5
-}) => (
+const Card1 = () => (
   <div className="cards">
-    <div className="card-wrapper">
-      <div className="profile">
-        <img src={image} alt="" />
-      </div>
-      <div className="name">
-        <span>
-          <i className="fa fa-check" />
-          {name}
-        </span>
-      </div>
-
-      <h4>{text}</h4>
-
-      <ul>
-        <li>{icon1}</li>
-        <li>{icon2}</li>
-        <li>{icon3}</li>
-        <li>{icon4}</li>
-        <li>{icon5}</li>
-
-        <div>
-          <span>{rate}</span>
+    <div className="card-wrapper1">
+      <div className="card1">
+        <div className="profile">
+          <img src={img1} alt="" />
         </div>
-      </ul>
-    </div>
+        <div className="name">
+          <span>
+            <i className="fa fa-check" />
+            ashok
+          </span>
+        </div>
 
-    {/* <span className="left">
-      <i className="fa fa-heart" />
-      {like}
-    </span> */}
+        <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
+
+        <ul>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+        </ul>
+
+        <h5>5</h5>
+      </div>
+    </div>
+  </div>
+);
+const Card2 = () => (
+  <div className="cards">
+    <div className="card-wrapper2">
+      <div className="card2">
+        <div className="profile">
+          <img src={img2} alt="" />
+        </div>
+        <div className="name">
+          <span>
+            <i className="fa fa-check" />
+            ashok
+          </span>
+        </div>
+
+        <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
+
+        <ul>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <span>
+              <i className="fa fa-star" />
+            </span>
+          </li>
+        </ul>
+
+        <h5>4.2</h5>
+      </div>
+    </div>
+  </div>
+);
+const Card3 = () => (
+  <div className="cards">
+    <div className="card-wrapper3">
+      <div className="card3">
+        <div className="profile">
+          <img src={img3} alt="" />
+        </div>
+        <div className="name">
+          <span>
+            <i className="fa fa-check" />
+            ashok
+          </span>
+        </div>
+
+        <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
+
+        <ul>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <span>
+              <i className="fa fa-star" />
+            </span>
+          </li>
+        </ul>
+
+        <h5>4.2</h5>
+      </div>
+    </div>
+  </div>
+);
+const Card4 = () => (
+  <div className="cards">
+    <div className="card-wrapper4">
+      <div className="card4">
+        <div className="profile">
+          <img src={img4} alt="" />
+        </div>
+        <div className="name">
+          <span>
+            <i className="fa fa-check" />
+            ashok
+          </span>
+        </div>
+
+        <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
+
+        <ul>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+          <li>
+            <i className="fa fa-star" />
+          </li>
+        </ul>
+
+        <h5>5</h5>
+      </div>
+    </div>
   </div>
 );
 

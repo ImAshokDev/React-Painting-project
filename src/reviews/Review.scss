@@ -1,0 +1,193 @@
+.review-section {
+  width: 1200px;
+  height: 500px;
+  background: #8e00ed;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  .title {
+    text-align: center;
+    color: white;
+    font-family: 'Almarai', sans-serif;
+    .box {
+      h1 {
+        font-size: 30px;
+        padding-top: 10px;
+      }
+    }
+  }
+  .row-around {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    div[class^='col-'] {
+      margin: 0;
+      padding: 0 1px;
+      overflow: hidden;
+    }
+    .review {
+      width: 250px;
+      height: 342px;
+      color: #919191;
+      margin: 20px 0 0 0;
+      user-select: none;
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+
+      .box-blue {
+        width: 251px;
+        height: 343px;
+        background: #0110df9b;
+      }
+      .box-green {
+        width: 250px;
+        height: 343px;
+        background: rgba(0, 153, 37, 0.7);
+      }
+      .box-yellow {
+        width: 250px;
+        height: 343px;
+        background: rgba(255, 229, 0, 0.7);
+      }
+      .box-red {
+        width: 250px;
+        height: 343px;
+        background: rgba(234, 0, 3, 0.7);
+      }
+      .card-wrapper {
+        overflow: hidden;
+        background: url(https://dl.dropboxusercontent.com/s/ou2wvj3smr8k8eu/bg.jpg);
+        background-size: cover;
+        min-height: 340px;
+        width: 248px;
+        position: relative;
+        margin-bottom: 15px;
+        i {
+          margin-right: 5px;
+        }
+        .left {
+          font-size: 14px;
+          float: left;
+        }
+
+        .right {
+          float: right;
+        }
+        ul {
+          list-style-type: none;
+          li {
+            float: left;
+            margin: 0 2px;
+            font-size: 18px;
+            color: orange;
+            span {
+              color: white;
+            }
+          }
+        }
+        .card-overlay1 {
+          background: rgba(0, 0, 0, 0.8);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-transition: all ease-out 0.25s;
+          transition: all ease-out 0.25s;
+          box-shadow: inset 0 0 30px 3px #000;
+          z-index: 0;
+        }
+        .card-overlay1:hover {
+          background: #0110df9b;
+          cursor: pointer;
+          color: rgba(255, 255, 255, 0.87);
+        }
+        .card-overlay2 {
+          background: rgba(0, 0, 0, 0.8);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+
+          transition: all ease-out 0.25s;
+          box-shadow: inset 0 0 30px 3px #000;
+          z-index: 0;
+        }
+        .card-overlay2:hover {
+          background: rgba(0, 153, 37, 0.7);
+          cursor: pointer;
+        }
+
+        .card-overlay3 {
+          background: rgba(0, 0, 0, 0.8);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-transition: all ease-out 0.25s;
+          transition: all ease-out 0.25s;
+          box-shadow: inset 0 0 30px 3px #000;
+          z-index: 0;
+        }
+        .card-overlay3:hover {
+          background: rgba(255, 229, 0, 0.7);
+          cursor: pointer;
+        }
+
+        .card-overlay4 {
+          background: rgba(0, 0, 0, 0.8);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-transition: all ease-out 0.25s;
+          transition: all ease-out 0.25s;
+          box-shadow: inset 0 0 30px 3px #000;
+          z-index: 0;
+        }
+        .card-overlay4:hover {
+          background: rgba(234, 0, 3, 0.7);
+          cursor: pointer;
+        }
+
+        .card-header {
+          z-index: 1;
+          position: relative;
+          padding: 10px;
+        }
+        .card-mid {
+          height: 60px;
+          width: 60px;
+          position: absolute;
+          top: 50%;
+          left: 95%;
+          margin-left: -75px;
+          margin-top: -120px;
+          border-radius: 100%;
+          overflow: hidden;
+          border: 4px solid rgba(0, 0, 0, 0.5);
+          box-sizing: border-box;
+          -webkit-transition: all ease-out 0.25s;
+          transition: all ease-out 0.25s;
+          img {
+            max-width: 100%;
+          }
+        }
+        .card-wrapper:hover .card-mid {
+          border: 3px solid rgba(0, 0, 0, 0.5);
+          top: 47%;
+        }
+        .card-footer {
+          position: absolute;
+          margin: 120px 0 0 0;
+          color: #fff;
+          padding: 0 10px;
+          text-align: center;
+          h4 {
+            height: 90px;
+
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .review:hover {
+      color: rgba(255, 255, 255, 0.924);
+    }
+  }
+}
