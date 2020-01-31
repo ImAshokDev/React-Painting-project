@@ -4,6 +4,6 @@
 
 ##### [Original site URL](https://www.templatemonster.com/demo/67551.html)
 
-# Original Template Image
+### Original Template Image
 
 ![Template Image](./src/Original-image.jpg)
